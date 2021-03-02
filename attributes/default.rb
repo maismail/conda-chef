@@ -20,6 +20,8 @@ default["install"]["aws"]["docker"]["ecr-login_dir"]  = "/root/.docker-ecr-login
 
 default['install']['managed_docker_registry']         = "false"
 default['install']['managed_kubernetes']              = "false"
+default["install"]["cloud_tours_cache"]['base_dir']   = "/root/tours_cache"
+default["install"]["cloud_tours_cache"]['info_csv']   = "#{node["install"]["cloud_tours_cache"]['base_dir']}/tours_info.csv"
 
 # Set the root installation directory for Hopsworks to /srv/hops
 default["install"]["dir"]                         = "/srv/hops"
